@@ -1,4 +1,4 @@
-# DIY Temperature Sensor
+# Humiditure Backend
 
 A simple webserver to receive data from small temperature and humidity sensors all over the house. Also handles serving that data + a simple static webpage back to users.
 
@@ -10,7 +10,7 @@ A simple webserver to receive data from small temperature and humidity sensors a
 ## Development
 ```bash
 yarn
-yarn nodemon
+yarn serve
 ```
 
 ## Other Repositories
