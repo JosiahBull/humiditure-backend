@@ -1,0 +1,31 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: detect-private-key
+    -   id: mixed-line-ending
+    -   id: pretty-format-json
+        args: ['--autofix']
+    -   id: check-case-conflict
+    -   id: check-executables-have-shebangs
+-   repo: https://github.com/Lucas-C/pre-commit-hooks-lxml
+    rev: '525453d'
+    hooks:
+    -   id: forbid-html-img-without-alt-text
+    -   id: forbid-non-std-html-attributes
+    -   id: detect-missing-css-classes
+        args: ['--css-files-dir', 'static', '--html-files-dir', 'static']
+    -   id: html-tags-blacklist
+    -   id: html-attributes-blacklist
+-   repo: https://github.com/awebdeveloper/pre-commit-tslint
+    rev: '85cbb84'
+    hooks:
+    -   id: tslint
+        additional_dependencies: ['tslint@5.0.0']
+-   repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: '6e0cea8'
+    hooks:
+    -   id: markdownlint-fix
